@@ -7,6 +7,7 @@
     <fragment android:id="@+id/mainFragment"
               android:name="com.minhbka.navigationcomponent.MainFragment"
               android:label="MainFragment">
+
         <action android:id="@+id/action_mainFragment_to_chooseRecipientFragment"
                 app:popEnterAnim="@anim/slide_in_left"
                 app:popExitAnim="@anim/slide_out_right"
@@ -44,7 +45,10 @@
     <fragment android:id="@+id/specifyAmountFragment"
               android:name="com.minhbka.navigationcomponent.SpecifyAmountFragment"
               android:label="SpecifyAmountFragment">
+        <argument android:name="recipient"
+                  android:defaultValue="None"/>
         <action android:id="@+id/action_specifyAmountFragment_to_confirmationFragment"
+
                 app:popEnterAnim="@anim/slide_in_left"
                 app:popExitAnim="@anim/slide_out_right"
                 app:enterAnim="@anim/slide_in_right"
@@ -61,6 +65,10 @@
               android:label="ViewTransactionFragment"/>
 
     <fragment android:id="@+id/confirmationFragment"
+
               android:name="com.minhbka.navigationcomponent.ConfirmationFragment"
-              android:label="ConfirmationFragment"/>
+              android:label="ConfirmationFragment">
+        <argument android:name="recipient" android:defaultValue="None"/>
+        <argument android:name="amount" app:argType="com.minhbka.navigationcomponent.Money"/>
+    </fragment>
 </navigation>
