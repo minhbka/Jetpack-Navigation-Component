@@ -8,12 +8,24 @@
               android:name="com.minhbka.navigationcomponent.MainFragment"
               android:label="MainFragment">
         <action android:id="@+id/action_mainFragment_to_chooseRecipientFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
                 app:destination="@id/chooseRecipientFragment"/>
 
         <action android:id="@+id/action_mainFragment_to_viewTransactionFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
                 app:destination="@id/viewTransactionFragment"/>
 
         <action android:id="@+id/action_mainFragment_to_viewBalanceFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
                 app:destination="@id/viewBalanceFragment"/>
     </fragment>
 
@@ -21,6 +33,10 @@
               android:name="com.minhbka.navigationcomponent.ChooseRecipientFragment"
               android:label="ChooseRecipientFragment">
         <action android:id="@+id/action_chooseRecipientFragment_to_specifyAmountFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
                 app:destination="@id/specifyAmountFragment"/>
     </fragment>
 
@@ -29,6 +45,10 @@
               android:name="com.minhbka.navigationcomponent.SpecifyAmountFragment"
               android:label="SpecifyAmountFragment">
         <action android:id="@+id/action_specifyAmountFragment_to_confirmationFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
                 app:destination="@id/confirmationFragment"/>
     </fragment>
 
