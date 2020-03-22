@@ -9,9 +9,12 @@
               android:label="MainFragment">
         <action android:id="@+id/action_mainFragment_to_chooseRecipientFragment"
                 app:destination="@id/chooseRecipientFragment"/>
+
         <action android:id="@+id/action_mainFragment_to_viewTransactionFragment"
                 app:destination="@id/viewTransactionFragment"/>
-        <action android:id="@+id/action_mainFragment_to_viewBalanceFragment" app:destination="@id/viewBalanceFragment"/>
+
+        <action android:id="@+id/action_mainFragment_to_viewBalanceFragment"
+                app:destination="@id/viewBalanceFragment"/>
     </fragment>
 
     <fragment android:id="@+id/chooseRecipientFragment"
@@ -21,8 +24,7 @@
                 app:destination="@id/specifyAmountFragment"/>
     </fragment>
 
-    <fragment android:id="@+id/confirmationFragment" android:name="com.minhbka.navigationcomponent.ConfirmationFragment"
-              android:label="ConfirmationFragment"/>
+
     <fragment android:id="@+id/specifyAmountFragment"
               android:name="com.minhbka.navigationcomponent.SpecifyAmountFragment"
               android:label="SpecifyAmountFragment">
@@ -30,10 +32,15 @@
                 app:destination="@id/confirmationFragment"/>
     </fragment>
 
-    <fragment android:id="@+id/viewBalanceFragment" android:name="com.minhbka.navigationcomponent.ViewBalanceFragment"
+    <fragment android:id="@+id/viewBalanceFragment"
+              android:name="com.minhbka.navigationcomponent.ViewBalanceFragment"
               android:label="ViewBalanceFragment"/>
 
     <fragment android:id="@+id/viewTransactionFragment"
               android:name="com.minhbka.navigationcomponent.ViewTransactionFragment"
               android:label="ViewTransactionFragment"/>
+
+    <fragment android:id="@+id/confirmationFragment"
+              android:name="com.minhbka.navigationcomponent.ConfirmationFragment"
+              android:label="ConfirmationFragment"/>
 </navigation>
